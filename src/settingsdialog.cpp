@@ -78,6 +78,8 @@ SettingsDialog::SettingsDialog(QWidget* parent)
     addCallgraphPage();
 #endif
     addSourcePathPage();
+
+    setAttribute(Qt::WA_DeleteOnClose);
 }
 
 SettingsDialog::~SettingsDialog() = default;
